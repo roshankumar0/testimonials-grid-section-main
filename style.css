@@ -1,7 +1,10 @@
-*{
-    margin: 0; padding: 0; box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-:root{
+
+:root {
     --moderate-violet: hsl(263, 55%, 52%);
     --dark-grayish-blue: hsl(217, 19%, 35%);
     --dark-blackish: hsl(219, 29%, 14%);
@@ -9,7 +12,8 @@
     --Light-gray: hsl(0, 0%, 81%);
     --Light-grayish: hsl(210, 46%, 95%);
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -18,103 +22,108 @@ body{
     background: var(--Light-grayish);
     justify-content: center;
     align-items: center;
-    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
     grid-template-rows: 300px 270px;
     grid-gap: 20px;
     padding: 50px;
-    grid-template-areas:"danial danial jonathan kira"
-    "jeanette patrick patrick kira" ;
-
+    grid-template-areas: "danial danial jonathan kira" "jeanette patrick patrick kira";
 }
 
-.card{
+.card {
     border-radius: 8px;
     padding: 20px;
 }
-.card h5{
+
+.card h5 {
     font-size: 22px;
     margin-bottom: 20px;
     color: var(--white);
 }
-.card p{
+
+.card p {
     font-size: 14px;
     color: var(--Light-gray);
 }
+
 .profile {
     display: flex;
 }
-.profile img{
+
+.profile img {
     width: 30px;
     border-radius: 50%;
     margin-right: 15px;
     margin-bottom: 22px;
     border: 1px solid white;
 }
-.profile h4{
+
+.profile h4 {
     color: var(--white);
     font-weight: 400;
     font-size: 14px;
 }
-.profile span{
+
+.profile span {
     color: var(--Light-gray);
 }
 
-.danial{
+.danial {
     background: var(--moderate-violet);
     grid-area: danial;
-   
 }
-.jonathan{
+
+.jonathan {
     background: var(--dark-grayish-blue);
     grid-area: jonathan;
-    
 }
-.kira{
+
+.kira {
     background: var(--white);
     grid-area: kira;
-    
-   
 }
-.jeanette{
+
+.jeanette {
     background: var(--white);
     grid-area: jeanette;
-    
 }
-.patrick{
+
+.patrick {
     background: var(--dark-blackish);
     grid-area: patrick;
-  
-    
 }
-.card .black{
+
+.card .black {
     color: var(--dark-blackish);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-@media (max-width:992px){
-    .container{
-       display: flex;
-       flex-direction: column;
-       padding:0;
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
     }
-    .card{
+    .card {
         width: 100%;
         border-radius: 0px;
         padding: 0;
     }
-    .card h5{
+    .card h5 {
         font-size: 12px;
-        
     }
-    .card p{
+    .card p {
         font-size: 13px;
-        
     }
-    
 }
